@@ -9,8 +9,9 @@
                 color: aqua
             }
         </style>
+
     </head>
-    <body class="body">
+    <body id="bodyItem" class="body">
         <h2 class="pageTitle" id="pageTitle">Hello World</h2>
         <p>Cupcake ipsum dolor sit amet bear claw croissant tootsie roll. 
             Pie soufflé chupa chups toffee candy canes dessert pie. 
@@ -36,16 +37,21 @@
             <img src="http://www.cupcakeipsum.com/assets/pink_muffin.png" alt="Pink muffin"/>
         </div>
         <script>
-            // window.setInterval(switchColour,1000);// Set the timeout in ms
-
-            // function switchColour(){
-            //     var bob = document.getElementById("pageTitle");
-            //     if(bob.style != "color: red"){
-            //         bob.style = "color: red";
-            //     } else {
-            //         bob.style = "color: purple";
-            //     }
-            // }
+            var h = document.createElement("H2");                // Create a <h1> element
+            var t = document.createTextNode("Hello Coding Club");     // Create a text node
+            h.appendChild(t); 
+            var body = document.getElementById("bodyItem");
+            body.appendChild(h);
+            var bodyClasses = document.getElementsByClassName("body");
+            var bob = document.getElementById("pageTitle");
+            if(bob.style != "color: red"){
+                bob.innerText = "Hello";
+                bob.style = "color: red";
+            } else {
+                bob.innerText = "Hello";
+                bob.style = "color: purple";
+            }
+            
         </script>
     </body>
 </html>
