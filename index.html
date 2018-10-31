@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .body {
-                color: red
-            }
-            .pageTitle {
-                color: aqua
-            }
-        </style>
-
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
-    <body id="bodyItem" class="body">
+    <body id="bodyItem" class="bodyclass">
         <h2 class="pageTitle" id="pageTitle">Hello World</h2>
         <p>Cupcake ipsum dolor sit amet bear claw croissant tootsie roll. 
             Pie soufflé chupa chups toffee candy canes dessert pie. 
@@ -25,10 +17,11 @@
             Tootsie roll sweet roll dessert fruitcake cake pastry biscuit.</p>
         <a href="http://www.google.co.uk">Hello!</a>
         <ul>
-            <li>
+            <li class="li-green">
+                <h2>Hello world</h2>
                 Hello
             </li>
-            <li>
+            <li class="li-red">
                 World
             </li>
         </ul>
@@ -36,22 +29,6 @@
             <h2>Hello from the div</h2>
             <img src="http://www.cupcakeipsum.com/assets/pink_muffin.png" alt="Pink muffin"/>
         </div>
-        <script>
-            var h = document.createElement("H2");                // Create a <h1> element
-            var t = document.createTextNode("Hello Coding Club");     // Create a text node
-            h.appendChild(t); 
-            var body = document.getElementById("bodyItem");
-            body.appendChild(h);
-            var bodyClasses = document.getElementsByClassName("body");
-            var bob = document.getElementById("pageTitle");
-            if(bob.style != "color: red"){
-                bob.innerText = "Hello";
-                bob.style = "color: red";
-            } else {
-                bob.innerText = "Hello";
-                bob.style = "color: purple";
-            }
-            
-        </script>
+        <script type="text/javascript" src="js/script.js"></script>            
     </body>
 </html>

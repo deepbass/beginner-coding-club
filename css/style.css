@@ -1,0 +1,21 @@
+
+            h2 {
+                color: #ffffff;
+                margin: 100px;
+                font-style: italic;
+            }
+            body {
+                color:blueviolet;
+            }
+            #pageTitle {
+                color:black
+            }
+            .li-green{
+                color:green;
+            }
+            .li-red{
+                color:red;
+            }
+            ul {
+                color: black;
+            }
