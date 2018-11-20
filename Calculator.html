@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+      <link rel="stylesheet" type="text/css" href="css/MystyleCalculator.css">
+</head>
+
+<body>
+      <h1>Calculate This</h1>
+
+      <form name="calculator">
+
+            <table>
+                  <tr>
+
+                        <td colspan="4">
+
+                              <input type="text" name="display" id="display" disabled>
+
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <input class="numberButton" type="button" name="one" value="1" onclick="numberButtonPressed('1')">
+                        </td>
+
+                        <td>
+                              <input type="button" name="two" value="2" onclick="numberButtonPressed('2')">
+                        </td>
+
+                        <td>
+                              <input type="button" name="three" value="3" onclick="numberButtonPressed('3')">
+                        </td>
+
+                        <td>
+                              <input type="button" class="operator" name="plus" value="+" onclick="plusButtonPressed()">
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <input type="button" name="four" value="4" onclick="numberButtonPressed('4')">
+                        </td>
+
+                        <td>
+                              <input type="button" name="five" value="5" onclick="numberButtonPressed('5')">
+                        </td>
+
+                        <td>
+                              <input type="button" name="six" value="6" onclick="numberButtonPressed('6')">
+                        </td>
+
+                        <td>
+                              <input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'">
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <input type="button" name="seven" value="7" onclick="numberButtonPressed('7')">
+                        </td>
+
+                        <td>
+                              <input type="button" name="eight" value="8" onclick="numberButtonPressed('8')">
+                        </td>
+
+                        <td>
+                              <input type="button" name="nine" value="9" onclick="numberButtonPressed('9')">
+                        </td>
+
+                        <td>
+                              <input type="button" class="operator" name="multiply" value="x" onclick="calculator.display.value += '*'">
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">
+                        </td>
+                        <td>
+                              <input type="button" name="zero" value="0" onclick="numberButtonPressed('0')">
+                        </td>
+                        <td>
+                              <input type="button" name="equal" value="=" onclick="equalsButtonPressed()">
+                        </td>
+                        <td>
+                              <input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value += '/'">
+                        </td>
+                  </tr>
+
+            </table>
+      </form>
+      <script src="js/index.js"></script>
+</body>
+
+</html>
